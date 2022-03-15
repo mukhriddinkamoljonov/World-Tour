@@ -28,7 +28,7 @@ const languages = [
 ];
 // const [dropdown, setDropdown] = useState(false);
 
-const GlobeIcon = ({ width = 33, height = 35, marginTop = 3, left = 20 }) => (
+const GlobeIcon = ({ width = 33, marginTop = 3, left = 20 }) => (
   <div style={{ marginTop: marginTop, marginLeft: left, display: "flex" }}>
     <div class="dropdown">
       <button
@@ -53,14 +53,12 @@ const GlobeIcon = ({ width = 33, height = 35, marginTop = 3, left = 20 }) => (
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
         {languages.map(({ code, country_code, name }) => (
-          <li key={country_code}>
-            <button
-              className="dropdown-item"
-              onClick={() => i18n.changeLanguage(code)}
-            >
-              {name}
-            </button>
-          </li>
+          <p
+            className="dropdown-item dropdown-item-text"
+            onClick={() => i18n.changeLanguage(code)}
+          >
+            {name}
+          </p>
         ))}
       </ul>
     </div>
