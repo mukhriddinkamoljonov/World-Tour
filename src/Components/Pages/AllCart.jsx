@@ -79,7 +79,7 @@ const AllCart = () => {
                   <ul className="additional-details-list clearfix">
                     <li>
                       <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
-                        Sayohat yo'nalishi:
+                        {t("useful91")}
                       </span>
                       <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
                         <div
