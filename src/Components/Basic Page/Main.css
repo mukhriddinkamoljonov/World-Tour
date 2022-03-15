@@ -14,6 +14,7 @@
   font-weight: 600;
   border-bottom: 1px solid #e9ecef;
   background-position: 50%;
+  margin-top: -27px;
 }
 
 @media (max-width: 480px) {
@@ -342,4 +343,10 @@
 
 .form_flex {
   width: auto;
+}
+
+.flag-img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
 }

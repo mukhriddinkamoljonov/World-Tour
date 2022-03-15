@@ -3,27 +3,35 @@ import { Link } from "react-router-dom";
 import "./Main.css";
 import i18n from "i18next";
 import { useTranslation } from "react-i18next";
+import uzb from "../icons/uzb.png";
+import rus from "../icons/rus.png";
+import eng from "../icons/eng.png";
+import arb from "../icons/arb.png";
 
 const languages = [
   {
     code: "uz",
     name: "Uzbekcha",
     country_code: "uz",
+    icon: uzb,
   },
   {
     code: "ru",
     name: "Русский",
     country_code: "ru",
+    icon: rus,
   },
   {
     code: "en",
     name: "English",
     country_code: "gb",
+    icon: eng,
   },
   {
     code: "ar",
     name: "عربي",
     country_code: "sa",
+    icon: arb,
   },
 ];
 // const [dropdown, setDropdown] = useState(false);
@@ -52,14 +60,16 @@ const GlobeIcon = ({ width = 33, marginTop = 3, left = 20 }) => (
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-        {languages.map(({ code, country_code, name }) => (
-          <p
-            className="dropdown-item dropdown-item-text"
-            onClick={() => i18n.changeLanguage(code)}
-          >
-            <span class="fi fi-gr"></span>
-            {name}
-          </p>
+        {languages.map(({ code, icon, country_code, name }) => (
+          <div>
+            <img src={icon} alt={country_code} className="flag-img" />
+            <p
+              className="dropdown-item dropdown-item-text"
+              onClick={() => i18n.changeLanguage(code)}
+            >
+              {name}
+            </p>
+          </div>
         ))}
       </ul>
     </div>
@@ -166,8 +176,6 @@ const Navbar = ({ setQuery }) => {
               >
                 <Link to="/Sayyohlar" aria-expanded="false">
                   {t("for")}
-                  <span className="fi fi-gr"></span>{" "}
-                  <span className="fi fi-gr fis"></span>
                 </Link>
               </li>
               <li className="wow fadeInDown" data-wow-delay="0.3s">
