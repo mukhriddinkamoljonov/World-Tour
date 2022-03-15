@@ -35,6 +35,7 @@ i18n
 
 const Main = ({ query }) => {
   const { t } = useTranslation();
+  const [count, setCount] = useState([]);
   const [items, setItems] = useState([]);
   const [isReady, setIsReady] = useState(null);
   const [ruble, setRuble] = useState([]);
@@ -53,6 +54,23 @@ const Main = ({ query }) => {
       });
   }, []);
 
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.currencyapi.com/v3/latest?apikey=JEOzEX7FoFNYMYrwL7MZRXYwDcWVeENbTtpKfoBM"
+      )
+      .then((res) => {
+        setCount(res.data.data.USD);
+        setRuble(res.data.data.RUB);
+        setYevro(res.data.data.EUR);
+        setLira(res.data.data.TRY);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  console.log(count);
   return (
     <div>
       {/* SLIDER AREA START */}
@@ -60,14 +78,8 @@ const Main = ({ query }) => {
         <div className="slider-content">
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
-              <h2 className="header-title-per">
-                {t("main1")}
-              </h2>
-              <h4 className="header-title-simple">
-                {t(
-                  "main2"
-                )}
-              </h4>
+              <h2 className="header-title-per">{t("main1")}</h2>
+              <h4 className="header-title-simple">{t("main2")}</h4>
             </div>
           </div>
         </div>
@@ -89,7 +101,7 @@ const Main = ({ query }) => {
               <p>
                 {t("card_title2")}
                 <span style={{ color: "orange" }}> {t("card_main")}</span>
-                {t('card_title3')}
+                {t("card_title3")}
               </p>
             </div>
           </div>
@@ -111,9 +123,7 @@ const Main = ({ query }) => {
                       <h5>
                         <a href="/">Covid-2019 </a>
                       </h5>
-                      <h5 className="tree-sub-ttl">
-                        {t('covid')}
-                      </h5>
+                      <h5 className="tree-sub-ttl">{t("covid")}</h5>
                       <a
                         target="_blank"
                         href="https://www.worldometers.info/coronavirus/"
@@ -136,7 +146,6 @@ const Main = ({ query }) => {
         </div>
       </div>{" "}
       {/* CARTS AREA END */}
-
       {/* WELCOME AREA START */}
       <div className="Welcome-area">
         <div className="container">
@@ -172,7 +181,7 @@ const Main = ({ query }) => {
                             <img src={plane} alt="plane img" />
                           </a>
                         </div>
-                        <h3>{t('avia')}</h3>
+                        <h3>{t("avia")}</h3>
                       </div>
                     </div>
                     <div className="col-xs-6 m-padding">
@@ -200,7 +209,7 @@ const Main = ({ query }) => {
                             <img src={hotel} alt="" />
                           </a>
                         </div>
-                        <h3>{t('hotel')}</h3>
+                        <h3>{t("hotel")}</h3>
                       </div>
                     </div>
                     <div className="col-xs-6 m-padding">
@@ -211,7 +220,7 @@ const Main = ({ query }) => {
                             <img src={globe} alt="" />
                           </a>
                         </div>
-                        <h3>{t('phone')}</h3>
+                        <h3>{t("phone")}</h3>
                       </div>
                     </div>
                   </div>
@@ -227,7 +236,7 @@ const Main = ({ query }) => {
         <div className="container">
           <div className="row">
             <div className="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
-              <h2>{t('believe')}</h2>
+              <h2>{t("believe")}</h2>
             </div>
           </div>
           <div className="row">
@@ -243,7 +252,7 @@ const Main = ({ query }) => {
                     </div>
                     <div className="chart" data-percent="5000">
                       <h2 className="percent" id="">
-                        {items.value}
+                        {count.value}
                       </h2>
                       <h5>1 AQSh dollari , USD</h5>
                     </div>
@@ -304,13 +313,13 @@ const Main = ({ query }) => {
                   <img src={agreed} alt="agreed" className="sale-img" />
                 </div>
                 <div className="asks-first-info">
-                  <h2>{t('diplomatic')}</h2>
+                  <h2>{t("diplomatic")}</h2>
                   <p>
-                    {t('diplomatic1')}
+                    {t("diplomatic1")}
                     <span style={{ color: "red", fontWeight: 600 }}>
                       uzairways.uz.
                     </span>
-                    {t('diplomatic2')}
+                    {t("diplomatic2")}
                   </p>
                 </div>
                 <div className="asks-first-arrow">
@@ -338,7 +347,7 @@ const Main = ({ query }) => {
                       {" "}
                       e-visa.gov.uz{" "}
                     </span>{" "}
-                    {t('visa2')}
+                    {t("visa2")}
                   </p>
                 </div>
                 <div className="asks-first-arrow">
