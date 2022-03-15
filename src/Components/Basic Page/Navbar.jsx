@@ -34,7 +34,6 @@ const languages = [
     icon: arb,
   },
 ];
-// const [dropdown, setDropdown] = useState(false);
 
 const GlobeIcon = ({ width = 33, marginTop = 3, left = 20 }) => (
   <div style={{ marginTop: marginTop, marginLeft: left, display: "flex" }}>
@@ -78,7 +77,6 @@ const GlobeIcon = ({ width = 33, marginTop = 3, left = 20 }) => (
 
 const Navbar = ({ setQuery }) => {
   const { t } = useTranslation();
-  const [clas, setClass] = useState([]);
 
   const addClass = () => {};
   return (
