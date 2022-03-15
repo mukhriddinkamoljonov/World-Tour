@@ -4,9 +4,11 @@ import Button from "./button";
 import payme from "../../img/payme_01.png";
 import "./Form.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Form = ({ item }) => {
   const [isActive, setActive] = useState(false);
+   const { t } = useTranslation();
 
   const toggleClass = (event) => {
     setActive(event.target.value);
@@ -96,7 +98,7 @@ const Form = ({ item }) => {
     <div className="container2">
       <form onSubmit={(e) => payButton(e)}>
         <div className="row">
-          <h4>Buyurtma qilish</h4>
+          <h4>{t("useful84")}</h4>
 
           <div className="input-group input-group-icon">
             <input
@@ -139,8 +141,8 @@ const Form = ({ item }) => {
           <div>
             <div className="count">
               <h3>
-                <span>Qiymat: </span>
-                {activePrice} so'm
+                <span>{t("useful85")} </span>
+                {activePrice} {t("useful78")}
               </h3>
             </div>{" "}
             <div>
@@ -152,21 +154,22 @@ const Form = ({ item }) => {
                 >
                   {item.price1 ? (
                     <option value={item.price1}>
-                      {item.price1_description} {item.price1} so'm
+                      {item.price1_description} {item.price1} {t("useful78")}
                     </option>
                   ) : (
                     ""
                   )}
                   {item.price2 ? (
                     <option value={item.price2}>
-                      {item.price2_description} {item.price2}so'm
+                      {item.price2_description} {item.price2} {t("useful78")}
                     </option>
                   ) : (
                     ""
                   )}
                   {item.price3 ? (
                     <option value={item.price3}>
-                      {item.price3_description} {item.price3}so'm
+                      {item.price3_description} {item.price3}
+                      {t("useful78")}
                     </option>
                   ) : (
                     ""
@@ -178,7 +181,7 @@ const Form = ({ item }) => {
               <div className="buttons">
                 <Button title={"-"} action={decrementCount} />
                 <span style={{ marginLeft: "10px", marginRight: "-15px" }}>
-                  Odam soni:
+                  {t("useful86")}
                 </span>
                 <h2>{count}</h2>
                 <Button title={"+"} action={incrementCount} />
@@ -194,14 +197,14 @@ const Form = ({ item }) => {
                 type="submit"
                 onClick={(toggleClass, button)}
               >
-                <span className="texta payment">To'lov</span>
+                <span className="texta payment">{t("useful87")}</span>
               </button>
             </div>
           </div>
         </div>
       </form>
       <button>
-        <Link to="/payment">Xalqaro Tolovlar uchun</Link>
+        <Link to="/payment">{t("useful88")}</Link>
       </button>
     </div>
   );

@@ -7,11 +7,13 @@ import { useParams } from "react-router-dom";
 import Tavsiya from "./Tavsiya";
 import Form from "../Form/Form";
 import user from "../../img/user.png";
+import { useTranslation } from "react-i18next";
 
 const AllCart = () => {
   let { id } = useParams();
   const [item, setItem] = useState([]);
   const [itemData, setItemData] = useState([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     axios
@@ -72,7 +74,7 @@ const AllCart = () => {
                   </span>
                 </div>
                 <div className="section additional-details">
-                  <h4 className="s-property-title">Eng yaxshi shartnoma</h4>
+                  <h4 className="s-property-title">{t("useful75")}</h4>
 
                   <ul className="additional-details-list clearfix">
                     <li>
@@ -89,13 +91,13 @@ const AllCart = () => {
                     </li>
                     <li>
                       <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
-                        Dvomiyligi:
+                        {t("useful76")}
                       </span>
                       <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
                         {item.duration}
                       </span>
                     </li>
-                    <h4 className="s-property-title">Takliflar</h4>
+                    <h4 className="s-property-title">{t("useful77")}</h4>
                     <li>
                       {item.price1_description ? (
                         <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
@@ -106,7 +108,7 @@ const AllCart = () => {
                       )}
                       {item.price1 ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price1} so'm
+                          {item.price1} {t("useful78")}
                         </span>
                       ) : (
                         ""
@@ -122,7 +124,7 @@ const AllCart = () => {
                       )}
                       {item.price2 ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price2} so'm
+                          {item.price2} {t("useful78")}
                         </span>
                       ) : (
                         ""
@@ -138,7 +140,7 @@ const AllCart = () => {
                       )}
                       {item.price3 ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price3} so'm
+                          {item.price3} {t("useful78")}
                         </span>
                       ) : (
                         ""
@@ -146,7 +148,7 @@ const AllCart = () => {
                     </li>
                     <li>
                       <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
-                        Imtiyozlar
+                        {t("useful79")}
                       </span>
                       {item.benefits ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
@@ -159,7 +161,7 @@ const AllCart = () => {
                   </ul>
                 </div>
                 <div className="section">
-                  <h4 className="s-property-title">To'liq ma'lumot</h4>
+                  <h4 className="s-property-title">{t("useful80")}</h4>
                   <div className="s-property-content">
                     <div
                       dangerouslySetInnerHTML={{
@@ -170,9 +172,7 @@ const AllCart = () => {
                 </div>
 
                 <div className="section additional-details ">
-                  <h4 className="s-property-title">
-                    Narxga quyidagilar kiradi:
-                  </h4>
+                  <h4 className="s-property-title">{t("useful81")}</h4>
                   <div>
                     <div
                       dangerouslySetInnerHTML={{
@@ -200,7 +200,7 @@ const AllCart = () => {
                         <ul className="dealer-contacts">
                           <li>
                             <i className="pe-7s-map-marker strong"> </i>{" "}
-                            Farg'ona shahar, Al-Marg'iloniy 12 uy.
+                            {t("useful82")}
                           </li>
                           <li>
                             <i className="pe-7s-mail strong"> </i>
@@ -211,10 +211,7 @@ const AllCart = () => {
                             01
                           </li>
                         </ul>
-                        <p>
-                          Bizning mijozlarimiz biz bilan o'sib boradi. Sizning
-                          muvaffaqiyatingiz bizning ustuvorligimizdir!
-                        </p>
+                        <p>{t("useful83")}</p>
                       </div>
                     </div>
                   </div>
