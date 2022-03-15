@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Main.css";
 import i18n from "i18next";
@@ -73,7 +73,7 @@ const GlobeIcon = ({ width = 33, marginTop = 3, left = 20 }) => (
       </ul>
     </div>
   </div>
-);
+)
 
 const Navbar = ({ setQuery }) => {
   const { t } = useTranslation();
