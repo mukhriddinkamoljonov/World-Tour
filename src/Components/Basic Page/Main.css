@@ -13,6 +13,7 @@
   text-align: center;
   font-weight: 600;
   border-bottom: 1px solid #e9ecef;
+  background-position: 50%;
 }
 
 @media (max-width: 480px) {

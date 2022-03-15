@@ -57,6 +57,7 @@ const GlobeIcon = ({ width = 33, marginTop = 3, left = 20 }) => (
             className="dropdown-item dropdown-item-text"
             onClick={() => i18n.changeLanguage(code)}
           >
+            <span class="fi fi-gr"></span>
             {name}
           </p>
         ))}
@@ -165,6 +166,8 @@ const Navbar = ({ setQuery }) => {
               >
                 <Link to="/Sayyohlar" aria-expanded="false">
                   {t("for")}
+                  <span className="fi fi-gr"></span>{" "}
+                  <span className="fi fi-gr fis"></span>
                 </Link>
               </li>
               <li className="wow fadeInDown" data-wow-delay="0.3s">
