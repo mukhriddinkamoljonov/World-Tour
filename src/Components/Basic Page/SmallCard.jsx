@@ -23,10 +23,12 @@ const SmallCard = ({ item }) => {
           <div className="dot-hr"></div>
           <span className="pull-left">
             <Link to={`/places/${item.id}`} className="btn-grad">
-              {t("more")}
+              {t("useful90")}
             </Link>
           </span>
-          <span className="proerty-price pull-right">{item.price1} so'm</span>
+          <span className="proerty-price pull-right">
+            {item.price1} {t("useful78")}
+          </span>
         </div>
       </div>
     </div>
