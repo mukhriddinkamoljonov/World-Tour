@@ -3649,7 +3649,7 @@ tbody.collapse.in {
   transition-property: height, visibility;
 }
 .caret {
-  display: inline-block;
+  /* display: inline-block; */
   width: 0;
   height: 0;
   margin-left: 2px;
