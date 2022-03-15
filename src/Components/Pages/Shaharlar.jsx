@@ -135,7 +135,7 @@ function Shaharlar({ query, setQuery }) {
                               </h5>
                               <div className="dot-hr"></div>
                               <span className="pull-left">
-                                <b> {t("useful89")}</b>
+                                <b> {t("useful91")}</b>
                               </span>
                               <span className="proerty-price pull-right">
                                 {item.price1}
