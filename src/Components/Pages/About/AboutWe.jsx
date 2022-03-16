@@ -202,14 +202,18 @@ function AboutWe() {
             {/* <Map/> */}
             <div className="map">
               <p>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d268.6336853963266!2d71.78528828495051!3d40.381302005714176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suz!2s!4v1647343429206!5m2!1suz!2s"
-                  // width="600"
-                  // height="450"
-                  style={{ border: 0 }}
-                  allowfullscreen=""
-                  loading="lazy"
-                ></iframe>
+                {
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2555.50349870899!2d71.77173202428591!3d40.38618411439649!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8280fefda94b4cea!2sWorld%20Glamour%20Tour!5e0!3m2!1suz!2s!4v1647465049681!5m2!1suz!2s"
+                    // width="600"
+                    // height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                }
+
+               
               </p>
             </div>
           </div>
