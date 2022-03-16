@@ -1,3 +1,7 @@
+.question-container {
+  display: block;
+  margin-bottom: 53px;
+}
 .accartion {
   padding: 2.5rem 2rem;
   display: grid;
@@ -19,4 +23,10 @@
   font-size: 2rem;
   margin-left: auto;
   background-color: #fdc600;
+}
+
+@media (min-width: 768px) {
+  .question-containe {
+    display: block;
+  }
 }

@@ -277,7 +277,7 @@
     height: 500px;
   }
   .question-container {
-    display: flex;
+    display:flex;
   }
   .cart_container {
     display: flex;
