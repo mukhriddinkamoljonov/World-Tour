@@ -15,7 +15,7 @@ const Sayyohlar = () => {
   const SayyohData = [
     {
       id: 1,
-      title: "Umumiy ma'lumotlar",
+      title: <div>{t("useful92")}</div>,
       info: (
         <div>
           <strong>{t("useful")} </strong> {t("useful1")} <br />{" "}
@@ -42,14 +42,14 @@ const Sayyohlar = () => {
     },
     {
       id: 2,
-      title: "4 fasl",
+      title: <div>{t("useful93")}</div>,
       info: <div>{t("useful28")}</div>,
       icon: <FaCloudSun />,
       img: fasl,
     },
     {
       id: 3,
-      title: "Bayramlar",
+      title: <div>{t("useful94")}</div>,
       info: (
         <div>
           <strong> {t("useful29")}</strong> {t("useful30")}
@@ -77,7 +77,7 @@ const Sayyohlar = () => {
     },
     {
       id: 4,
-      title: "Diplomatik vakolatxonalar",
+      title: <div>{t("useful95")}</div>,
       info: (
         <div>
           <strong>{t("useful49")} </strong>
@@ -88,7 +88,7 @@ const Sayyohlar = () => {
     },
     {
       id: 5,
-      title: "Viza",
+      title: <div>{t("useful96")}</div>,
       info: (
         <div>
           <strong>{t("useful50")} </strong>{" "}

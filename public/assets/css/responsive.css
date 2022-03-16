@@ -170,11 +170,11 @@
   }
   .slider-area {
     height: 100vh;
-    /* margin-top: -58px; */
+    margin-top: -195px;
   }
 
   .home-area-1 {
-    padding-top: 65px;
+    padding-top: 25px;
   }
   #bg-slider .item img {
     height: 440px;

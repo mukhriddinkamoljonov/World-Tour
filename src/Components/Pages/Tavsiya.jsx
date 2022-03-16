@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NoImage from "../../img/no-image.jpg";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 
 const Tavsiya = ({ title, count }) => {
   const [items, setItems] = useState([]);
   const [isReady, setIsReady] = useState(null);
+   const { t } = useTranslation();
   useEffect(() => {
     axios
       .get(
@@ -44,7 +47,8 @@ const Tavsiya = ({ title, count }) => {
                   <h6>
                     <Link to={`/places/${item.id}`}>{item.name} </Link>
                   </h6>
-                  <span className="property-price">{item.price1}</span> so'm
+                  <span className="property-price">{item.price1}</span>{" "}
+                  {t("useful78")}
                 </div>
               </li>
             </ul>

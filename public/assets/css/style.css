@@ -2597,7 +2597,7 @@ count-area
   border-radius: 100%;
   text-align: center;
   margin-right: 15px;
-  margin-top: -20px;
+  margin-top: 1px;
 }
 .asks-first-circle span {
   vertical-align: middle;
@@ -2614,13 +2614,12 @@ count-area
   font: 500 30px "Open Sans", sans-serif;
   margin: 0px 0px 4px;
   text-transform: uppercase;
+  font-size: 17px;
 }
 .asks-first-info p {
-  font: 400 15px "Open Sans", sans-serif;
-  margin: 0px;
-  width: 320px;
-  margin-top: 20px;
-  /* text-align: justify; */
+    font: 400 16px "Open Sans", sans-serif;
+    margin: 45px 2px 0 0;
+    width: 300px;
 }
 
 .asks-first-arrow {
@@ -2661,7 +2660,7 @@ count-area
   cursor: pointer;
 }
 .box-tree .item-tree-icon {
-  padding-top: 35%;
+  padding-top: 5%;
 }
 .box-tree .item-tree-icon i:hover {
   color: #d27e04;
