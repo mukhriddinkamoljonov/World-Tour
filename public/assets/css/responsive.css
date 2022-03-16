@@ -136,7 +136,7 @@
   }
   .slider-content h2 {
     font-size: 21px;
-    margin-bottom: 15px;
+   margin-top: 230px;
   }
   .slider-content p {
     font-size: 12px;
@@ -170,7 +170,7 @@
   }
   .slider-area {
     height: 100vh;
-    margin-top: 30px;
+    margin-top: -200px;
   }
 
   .home-area-1 {
