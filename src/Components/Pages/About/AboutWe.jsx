@@ -134,7 +134,7 @@ function AboutWe() {
             </div>
 
             <div className="count-area about-area">
-              <div className="container">
+              <div className="container ">
                 <div className="row">
                   <div className="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
                     <h2>{t("useful66")}</h2>
@@ -200,22 +200,20 @@ function AboutWe() {
             </div>
             <hr />
             {/* <Map/> */}
-            <div className="map">
-              <p>
-                {
+            {
+              <div className="map">
+                <p>
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2555.50349870899!2d71.77173202428591!3d40.38618411439649!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8280fefda94b4cea!2sWorld%20Glamour%20Tour!5e0!3m2!1suz!2s!4v1647465049681!5m2!1suz!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6256.520144841614!2d71.77553528992351!3d40.38215777152787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb83b8ca19ff63%3A0x8280fefda94b4cea!2sWorld%20Glamour%20Tour!5e0!3m2!1suz!2sus!4v1647465737892!5m2!1suz!2sus"
                     // width="600"
                     // height="450"
-                    style="border:0;"
+                    style={{ border: 0}}
                     allowfullscreen=""
                     loading="lazy"
                   ></iframe>
-                }
-
-               
-              </p>
-            </div>
+                </p>
+              </div>
+            }
           </div>
         </div>
       </div>
