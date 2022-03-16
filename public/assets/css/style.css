@@ -2524,6 +2524,8 @@ count-area
 }
 .count-area .count-item {
   text-align: center;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 .count-area .count-item-circle {
   height: 100px;
