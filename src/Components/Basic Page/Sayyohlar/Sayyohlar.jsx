@@ -52,7 +52,7 @@ const Sayyohlar = () => {
       title: <div>{t("useful94")}</div>,
       info: (
         <div>
-          <strong> {t("useful29")}</strong> {t("useful30")}
+          <strong> {t("useful29")}</strong> {t("useful30")} 
           <br /> <strong>{t("useful31")}</strong>
           {t("useful32")} <br /> <strong>{t("useful33")}</strong>{" "}
           {t("useful34")} <br /> <strong>{t("useful35")}</strong>{" "}

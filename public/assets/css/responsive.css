@@ -170,7 +170,7 @@
   }
   .slider-area {
     height: 100vh;
-    margin-top: -195px;
+    margin-top: 30px;
   }
 
   .home-area-1 {
@@ -240,7 +240,7 @@
   .single-footer {
     /* margin-top: 35px; */
   }
-  
+
   .single-footer p {
     font-size: 13px;
   }
