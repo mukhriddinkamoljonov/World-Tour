@@ -15,7 +15,7 @@ const Sayyohlar = () => {
   const SayyohData = [
     {
       id: 1,
-      title: <div>{t("useful92")}</div>,
+      title: <span>{t("useful92")}</span>,
       info: (
         <div>
           <strong>{t("useful")} </strong> {t("useful1")} <br />{" "}
@@ -42,17 +42,17 @@ const Sayyohlar = () => {
     },
     {
       id: 2,
-      title: <div>{t("useful93")}</div>,
+      title: <span>{t("useful93")}</span>,
       info: <div>{t("useful28")}</div>,
       icon: <FaCloudSun />,
       img: fasl,
     },
     {
       id: 3,
-      title: <div>{t("useful94")}</div>,
+      title: <span>{t("useful94")}</span>,
       info: (
         <div>
-          <strong> {t("useful29")}</strong> {t("useful30")} 
+          <strong> {t("useful29")}</strong> {t("useful30")}
           <br /> <strong>{t("useful31")}</strong>
           {t("useful32")} <br /> <strong>{t("useful33")}</strong>{" "}
           {t("useful34")} <br /> <strong>{t("useful35")}</strong>{" "}
@@ -77,7 +77,7 @@ const Sayyohlar = () => {
     },
     {
       id: 4,
-      title: <div>{t("useful95")}</div>,
+      title: <span>{t("useful95")}</span>,
       info: (
         <div>
           <strong>{t("useful49")} </strong>
@@ -88,7 +88,7 @@ const Sayyohlar = () => {
     },
     {
       id: 5,
-      title: <div>{t("useful96")}</div>,
+      title: <span>{t("useful96")}</span>,
       info: (
         <div>
           <strong>{t("useful50")} </strong>{" "}

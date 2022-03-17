@@ -171,15 +171,17 @@ const AllCart = () => {
                   </div>
                 </div>
 
-                <div className="section additional-details ">
-                  <h4 className="s-property-title">{t("useful81")}</h4>
-                  <div>
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: item.about_prices,
-                      }}
-                      style={{ fontWeight: 700 }}
-                    ></div>
+                <div className="section-backg">
+                  <div className="section additional-details ">
+                    <h4 className="s-property-title">{t("useful81")}</h4>
+                    <div>
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: item.about_prices,
+                        }}
+                        style={{ fontWeight: 700 }}
+                      ></div>
+                    </div>
                   </div>
                 </div>
               </div>

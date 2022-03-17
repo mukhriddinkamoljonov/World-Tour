@@ -10,7 +10,7 @@ const Question = ({ title, info, icon, img }) => {
       <header>
         <div style={{ display: "flex", marginLeft: "auto" }}>
           <h4 onClick={() => setExpanded(!expanded)} className="question-title">
-            <span style={{ color: "#DD2C00", fontSize: "30px" }}> {icon}</span>{" "}
+            <span style={{ color: "#DD2C00", fontSize: "25px" }}> {icon}</span>{" "}
             {title}
           </h4>
           <button className="btn" onClick={() => setExpanded(!expanded)}>

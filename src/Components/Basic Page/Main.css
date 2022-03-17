@@ -277,7 +277,7 @@
     height: 500px;
   }
   .question-container {
-    display:flex;
+    display: flex;
   }
   .cart_container {
     display: flex;
@@ -349,4 +349,8 @@
   width: 30px;
   height: 30px;
   margin-left: 5px;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  height: 500px;
 }
