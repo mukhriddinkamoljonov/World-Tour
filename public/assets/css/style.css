@@ -448,9 +448,9 @@ fieldset[disabled] .btn-warning.active {
   padding: 2px 15px;
   border: 1px solid #fdc600;
   color: #000;
-  background-color: #fdc600;
   border-color: #f0f0f0;
   font-weight: 600;
+  border-radius: 150px;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -461,7 +461,7 @@ fieldset[disabled] .btn-warning.active {
   background-color: #fdc600;
   border-color: #f0f0f0;
   font-weight: 600;
-
+  transition: all 0.7s;
 }
 .search-form {
   background-color: #fff;
@@ -1051,7 +1051,6 @@ label small {
   border: 0.3px solid rgba(227, 227, 227, 0.22);
   border-radius: 0px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.176);
-  
 }
 .ymm-sw .dropdown-menu {
   position: absolute;
@@ -2619,9 +2618,9 @@ count-area
   font-size: 17px;
 }
 .asks-first-info p {
-    font: 400 16px "Open Sans", sans-serif;
-    margin: 45px 2px 0 0;
-    width: 300px;
+  font: 400 16px "Open Sans", sans-serif;
+  margin: 45px 2px 0 0;
+  width: 300px;
 }
 
 .asks-first-arrow {
