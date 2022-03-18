@@ -73,7 +73,7 @@ const GlobeIcon = ({ width = 33, marginTop = 3, left = 20 }) => (
       </ul>
     </div>
   </div>
-)
+);
 
 const Navbar = ({ setQuery }) => {
   const { t } = useTranslation();

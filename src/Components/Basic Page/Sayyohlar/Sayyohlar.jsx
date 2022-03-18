@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Question from "./Question";
 import "./Sayyoh.css";
 import { BsFillInfoCircleFill, BsFillGiftFill } from "react-icons/bs";

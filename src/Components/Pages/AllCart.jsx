@@ -6,7 +6,6 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import Tavsiya from "./Tavsiya";
 import Form from "../Form/Form";
-import user from "../../img/user.png";
 import { useTranslation } from "react-i18next";
 
 const AllCart = () => {
