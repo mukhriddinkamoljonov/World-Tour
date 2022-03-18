@@ -204,7 +204,7 @@ const Main = ({ query }) => {
                         <div className="welcome-icon">
                           <a
                             target="_blank"
-                            href="https://uzbektourism.uz/committee/spisokgostin"
+                            href="https://www.booking.com/"
                           >
                             <img src={hotel} alt="" />
                           </a>
