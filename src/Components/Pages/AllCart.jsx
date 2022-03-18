@@ -220,7 +220,7 @@ const AllCart = () => {
                 {item.id ? <Form item={item} /> : ""}
                 <div className="panel panel-default sidebar-menu wow fadeInRight animated">
                   <div className="panel-heading">
-                    <h3 className="panel-title"></h3>
+                    {/* <h3 className="panel-title"></h3> */}
                   </div>
                 </div>
                 <Tavsiya title="Tavsiya Etamiz!" count="4" />{" "}
