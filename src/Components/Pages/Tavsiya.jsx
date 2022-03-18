@@ -23,7 +23,7 @@ const Tavsiya = ({ title, count }) => {
       });
   }, []);
   return (
-    <div className="panel panel-default sidebar-menu similar-property-wdg wow fadeInRight animated">
+    <div className="panel panel_none panel-default sidebar-menu similar-property-wdg wow fadeInRight animated">
       <div className="panel-heading">
         <h3 className="panel-title">{title}</h3>
       </div>

@@ -286,6 +286,9 @@
   .cart2 {
     margin-left: 400px;
   }
+  .panel.sidebar-menu {
+    display: block;
+  }
 }
 
 #header.header-scrolled {

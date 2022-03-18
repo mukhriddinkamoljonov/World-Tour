@@ -1384,6 +1384,7 @@ Asside widgets CSS
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  display: none;
 }
 .panel.sidebar-menu .panel-heading {
   text-transform: uppercase;
@@ -1574,7 +1575,6 @@ Asside widgets CSS
   top: 0;
   float: right;
 }
-
 
 .page-title {
   padding-top: 55px;
