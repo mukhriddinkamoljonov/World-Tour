@@ -13,6 +13,7 @@ import Cart from "./Components/Basic Page/Cart/Cart";
 
 function App() {
   const [query, setQuery] = useState("");
+
   return (
     <div>
       <Navbar setQuery={setQuery} />
