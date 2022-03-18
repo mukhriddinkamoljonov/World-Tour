@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4041f6a5.css",
-    "main.js": "/static/js/main.32d00662.js",
+    "main.css": "/static/css/main.1dc88bd8.css",
+    "main.js": "/static/js/main.0bf45a2e.js",
     "static/media/biz_haqimizda1.jpg": "/static/media/biz_haqimizda1.b23666cec3cb32e6e47f.jpg",
     "static/media/logo.png": "/static/media/logo.a3e8fbf5b90fe75ab528.png",
     "static/media/viza.jpg": "/static/media/viza.6640a6837b87344ccedf.jpg",
@@ -24,17 +24,16 @@
     "static/media/agreed.png": "/static/media/agreed.e6cb64cab4e70db6fa4f.png",
     "static/media/arb.png": "/static/media/arb.49c566d33b2a369903ee.png",
     "static/media/payplay.jpg": "/static/media/payplay.4cf4ce685dc51ed644e9.jpg",
-    "static/media/user.png": "/static/media/user.b847900ce466c338fcfe.png",
     "static/media/rus.png": "/static/media/rus.e314a09bbab1844bfaea.png",
     "static/media/visa.jpg": "/static/media/visa.e72293959207c2b2ce46.jpg",
     "static/media/heart.png": "/static/media/heart.baf72ad6c2266e01da0d.png",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.4041f6a5.css.map": "/static/css/main.4041f6a5.css.map",
-    "main.32d00662.js.map": "/static/js/main.32d00662.js.map"
+    "main.1dc88bd8.css.map": "/static/css/main.1dc88bd8.css.map",
+    "main.0bf45a2e.js.map": "/static/js/main.0bf45a2e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4041f6a5.css",
-    "static/js/main.32d00662.js"
+    "static/css/main.1dc88bd8.css",
+    "static/js/main.0bf45a2e.js"
   ]
 }
