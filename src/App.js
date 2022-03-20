@@ -18,7 +18,6 @@ function App() {
     <div>
       <Navbar setQuery={setQuery} />
       <Routes>
-        {" "}
         <Route path="/" element={<Home query={query} />} />
         <Route path="/sayyohlar" element={<Sayyohlar />} />
         <Route path="/about" element={<AboutWe />} />
