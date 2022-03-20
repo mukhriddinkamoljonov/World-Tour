@@ -357,3 +357,11 @@
 .carousel .slider-wrapper.axis-horizontal .slider .slide {
   height: 250px;
 }
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.page-head-content h2 {
+  font-weight: 500;
+}
