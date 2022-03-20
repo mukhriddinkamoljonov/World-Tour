@@ -2170,9 +2170,9 @@ single property page
   overflow: hidden;
 }
 .single-property-header .property-title {
-  margin: 10px 0px;
+  margin: 20px 10px;
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -2190,7 +2190,8 @@ single property page
 .s-property-title {
   margin-bottom: 15px;
   color: #ffa500;
-  font-size: 35px;
+  font-size: 33px;
+  font-weight: 600;
 }
 
 .s-property-title::after {
