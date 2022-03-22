@@ -54,7 +54,10 @@ const Footer = () => {
                     <i className="pe-7s-mail strong"> </i> rnj-787@mail.ru
                   </li>
                   <li>
-                    <i className="pe-7s-call strong"> </i> (998) 97 214 44 01
+                    <i className="pe-7s-call strong"> </i>{" "}
+                    <a className="tel-number" href="tel: +998936439311">
+                      +998 (93) 643-93-11
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -137,8 +140,12 @@ const Footer = () => {
               <div className="single-footer news-letter">
                 <h4>{t("contacts")}</h4>
                 <div className="footer-title-line"></div>
-                <p>{t("contact1")}</p>
-                <p>(998) 93 643-93-11</p>
+                <p>
+                  {t("contact1")}{" "}
+                  <a className="tel-number" href="tel: +998936439311">
+                    +998 (93) 643-93-11
+                  </a>
+                </p>
                 <form>
                   <div className="input-group">
                     <input
@@ -219,46 +226,6 @@ const Footer = () => {
                 (C) <Link to="/">{t("section6")}</Link>
               </span>
             </div>
-            {/*<div className="bottom-menu pull-right">*/}
-            {/*  <ul>*/}
-            {/*    <li>*/}
-            {/*      <a*/}
-            {/*        className="wow fadeInUp animated"*/}
-            {/*        href="/"*/}
-            {/*        data-wow-delay="0.2s"*/}
-            {/*      >*/}
-            {/*        Home*/}
-            {/*      </a>*/}
-            {/*    </li>*/}
-            {/*    <li>*/}
-            {/*      <a*/}
-            {/*        className="wow fadeInUp animated"*/}
-            {/*        href="/"*/}
-            {/*        data-wow-delay="0.3s"*/}
-            {/*      >*/}
-            {/*        Property*/}
-            {/*      </a>*/}
-            {/*    </li>*/}
-            {/*    <li>*/}
-            {/*      <a*/}
-            {/*        className="wow fadeInUp animated"*/}
-            {/*        href="/"*/}
-            {/*        data-wow-delay="0.4s"*/}
-            {/*      >*/}
-            {/*        Faq*/}
-            {/*      </a>*/}
-            {/*    </li>*/}
-            {/*    <li>*/}
-            {/*      <a*/}
-            {/*        className="wow fadeInUp animated"*/}
-            {/*        href="/"*/}
-            {/*        data-wow-delay="0.6s"*/}
-            {/*      >*/}
-            {/*        Contact*/}
-            {/*      </a>*/}
-            {/*    </li>*/}
-            {/*  </ul>*/}
-            {/*</div>*/}
           </div>
         </div>
       </div>

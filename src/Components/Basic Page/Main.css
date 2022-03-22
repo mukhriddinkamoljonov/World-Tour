@@ -365,3 +365,7 @@
 .page-head-content h2 {
   font-weight: 500;
 }
+
+.tel-number {
+  color: #000 !important;
+}
