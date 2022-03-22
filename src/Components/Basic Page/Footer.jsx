@@ -54,7 +54,7 @@ const Footer = () => {
                       target="__blank"
                       href="https://www.google.com/maps/place/World+Glamour+Tour/@40.3806077,71.7825653,16.75z/data=!4m12!1m6!3m5!1s0x0:0x8280fefda94b4cea!2sWorld+Glamour+Tour!8m2!3d40.3810275!4d71.7849778!3m4!1s0x0:0x8280fefda94b4cea!8m2!3d40.3810275!4d71.7849778"
                     >
-                      Farg'ona shahar, Al-Marg'iloniy 12 uy.
+                      Farg'ona shahar, B.Marg'iloniy 12 uy.
                     </a>
                   </li>
                   <li>
