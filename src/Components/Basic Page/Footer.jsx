@@ -47,8 +47,13 @@ const Footer = () => {
                 </h6>
                 <ul className="footer-adress">
                   <li>
-                    <i className="pe-7s-map-marker strong"> </i> Farg'ona
-                    shahar, Al-Marg'iloniy 12 uy.
+                    <i className="pe-7s-map-marker strong"> </i>{" "}
+                    <a
+                      target="__blank"
+                      href="https://www.google.com/maps/place/World+Glamour+Tour/@40.3806077,71.7825653,16.75z/data=!4m12!1m6!3m5!1s0x0:0x8280fefda94b4cea!2sWorld+Glamour+Tour!8m2!3d40.3810275!4d71.7849778!3m4!1s0x0:0x8280fefda94b4cea!8m2!3d40.3810275!4d71.7849778"
+                    >
+                      Farg'ona shahar, Al-Marg'iloniy 12 uy.
+                    </a>
                   </li>
                   <li>
                     <i className="pe-7s-mail strong"> </i>
@@ -70,7 +75,7 @@ const Footer = () => {
                 <ul className="footer-menu">
                   <li>
                     <a
-                      target="_blank"
+                      target="__blank"
                       href="https://data.gov.uz/uz/sphere/authority/45"
                     >
                       {t("section1")}
@@ -78,7 +83,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      target="_blank"
+                      target="__blank"
                       href="https://uzbekistan.travel/uz/turizm-qonunlari/"
                     >
                       {t("section2")}
@@ -90,7 +95,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a target="_blank" href="https://kun.uz/">
+                    <a target="__blank" href="https://kun.uz/">
                       {t("section4")}
                     </a>
                   </li>
