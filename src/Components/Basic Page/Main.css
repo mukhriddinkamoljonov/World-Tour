@@ -355,7 +355,7 @@
 }
 
 .carousel .slider-wrapper.axis-horizontal .slider .slide {
-  height: 250px;
+  height: 500px;
 }
 
 .carousel.carousel-slider .control-arrow:hover {
@@ -372,4 +372,9 @@
 
 .footer-api-name {
   margin-left: 10px;
+}
+
+.carousel .thumb {
+  height: 50px;
+  margin-left: 45px;
 }
