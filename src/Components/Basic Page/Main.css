@@ -376,5 +376,9 @@
 
 .carousel .thumb {
   height: 50px;
-  margin-left: 45px;
+  margin-left: 10px;
+}
+
+.carousel .thumbs {
+  margin-left: 115px;
 }
