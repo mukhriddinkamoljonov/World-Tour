@@ -116,14 +116,16 @@ function Shaharlar({ query, setQuery }) {
                         <div className="col-sm-6 col-md-4 p0">
                           <div className="box-two proerty-item">
                             <div className="item-thumb">
-                              <img
-                                src={
-                                  item.images.length
-                                    ? item.images[0].file
-                                    : NoImage
-                                }
-                                alt={""}
-                              />
+                              <Link to={`/places/${item.id}`}>
+                                <img
+                                  src={
+                                    item.images.length
+                                      ? item.images[0].file
+                                      : NoImage
+                                  }
+                                  alt={""}
+                                />
+                              </Link>
                             </div>
 
                             <div className="item-entry overflow">

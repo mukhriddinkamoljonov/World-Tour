@@ -206,9 +206,10 @@ const Form = ({ item }) => {
       </form>
       <div className="visa-btn">
         <img src={visa} alt="visa" className="visa-img" />
-        <button className="btn-visa visa-title">
-          <Link to="/payment">{t("useful88")}</Link>
-        </button>
+        <Link to="/payment">
+          {" "}
+          <button className="btn-visa visa-title">{t("useful88")}</button>
+        </Link>
       </div>
     </div>
   );
