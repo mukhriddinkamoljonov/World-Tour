@@ -2,13 +2,14 @@ import axios from "axios";
 import React, { useState, useEffect, useRef } from "react";
 import Button from "./button";
 import payme from "../../img/payme_01.png";
+import visa from "../../img/visa.jpg";
 import "./Form.css";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Form = ({ item }) => {
   const [isActive, setActive] = useState(false);
-   const { t } = useTranslation();
+  const { t } = useTranslation();
 
   const toggleClass = (event) => {
     setActive(event.target.value);
@@ -203,9 +204,12 @@ const Form = ({ item }) => {
           </div>
         </div>
       </form>
-      <button>
-        <Link to="/payment">{t("useful88")}</Link>
-      </button>
+      <div className="visa-btn">
+        <img src={visa} alt="visa" className="visa-img" />
+        <button className="btn-visa visa-title">
+          <Link to="/payment">{t("useful88")}</Link>
+        </button>
+      </div>
     </div>
   );
 };
