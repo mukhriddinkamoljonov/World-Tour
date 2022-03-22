@@ -64,7 +64,7 @@ const Footer = () => {
                   <li>
                     <i className="pe-7s-call strong"> </i>{" "}
                     <a className="tel-number" href="tel: +998936439311">
-                      +998 (93) 643-93-11
+                      +998 (97) 214 44 01
                     </a>
                   </li>
                 </ul>
