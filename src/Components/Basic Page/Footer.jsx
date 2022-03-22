@@ -51,7 +51,8 @@ const Footer = () => {
                     shahar, Al-Marg'iloniy 12 uy.
                   </li>
                   <li>
-                    <i className="pe-7s-mail strong"> </i> rnj-787@mail.ru
+                    <i className="pe-7s-mail strong"> </i>
+                    <a href="mail: info@imsoft.uz">rnj-787@mail.ru</a>
                   </li>
                   <li>
                     <i className="pe-7s-call strong"> </i>{" "}
