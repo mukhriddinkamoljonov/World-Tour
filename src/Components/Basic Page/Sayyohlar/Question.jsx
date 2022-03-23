@@ -21,7 +21,7 @@ const Question = ({ title, info, icon, img }) => {
       </header>
       {expanded && (
         <div className="question-container">
-          <p style={{ alignItems: "justify" }}>{info}</p>
+          <p style={{ alignItems: "justify", width: "80rem" }}>{info}</p>
           <img
             src={img}
             alt=""

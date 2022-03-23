@@ -49,6 +49,7 @@ const Footer = () => {
                   </h6>
                 </div>
                 {/* Ozgartirilmasin !!!!!!!!*/}
+
                 <ul className="footer-adress">
                   <li>
                     <i className="pe-7s-map-marker strong"> </i>{" "}
