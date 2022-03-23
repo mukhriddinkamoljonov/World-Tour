@@ -36,17 +36,19 @@ const Footer = () => {
               <div className="single-footer">
                 <h4>{t("about_footer")}</h4>
                 <div className="footer-title-line"></div>
-                {/* <div style={{ display: "flex" }}> */}
-                <img
-                  src={logo}
-                  alt="logo"
-                  className="wow pulse"
-                  data-wow-delay="1s"
-                />
-                <h6 style={{ color: "#000", fontWeight: 600 }}>
-                  World Glamour Tour
-                </h6>
-                {/* </div> */}
+                {/* Ozgartirilmasin !!!!!!!!*/}
+                <div style={{ display: "flex" }}>
+                  <img
+                    src={logo}
+                    alt="logo"
+                    className="wow pulse"
+                    data-wow-delay="1s"
+                  />
+                  <h6 style={{ color: "#000", fontWeight: 600, marginTop: 30 }}>
+                    World Glamour Tour
+                  </h6>
+                </div>
+                {/* Ozgartirilmasin !!!!!!!!*/}
                 <ul className="footer-adress">
                   <li>
                     <i className="pe-7s-map-marker strong"> </i>{" "}
