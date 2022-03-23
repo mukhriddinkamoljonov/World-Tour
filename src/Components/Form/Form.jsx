@@ -208,7 +208,7 @@ const Form = ({ item }) => {
         <img src={visa} alt="visa" className="visa-img" />
         <Link to="/payment">
           {" "}
-          <button className="btn-visa visa-title">{t("useful88")}</button>
+          <button className="btn-visa visa-title">{t("useful87")}</button>
         </Link>
       </div>
     </div>
