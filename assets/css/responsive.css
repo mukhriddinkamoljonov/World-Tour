@@ -136,7 +136,7 @@
   }
   .slider-content h2 {
     font-size: 21px;
-   margin-top: 230px;
+    margin-top: 230px;
   }
   .slider-content p {
     font-size: 12px;
@@ -468,10 +468,10 @@
   }
 
   .slider-content {
-    top: 5%;
+    top: 27%;
   }
   .slider-area {
-    height: 440px;
+    /* height: 440px; */
   }
   .content-area {
     padding-top: 100px;
@@ -566,7 +566,6 @@
   .proerty-th-list p {
     padding-top: 10px;
   }
-  
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -727,7 +726,6 @@
   .proerty-th-list p {
     padding-top: 10px;
   }
- 
 }
 
 @media (min-width: 969px) and (max-width: 1169px) {
