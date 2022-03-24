@@ -165,16 +165,15 @@ const AllCart = () => {
                     <h4 className="s-property-title">{t("useful77")}</h4>
                     <li>
                       {NewData.price1_description ? (
-                        <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
-                          {NewData.price1_description}
-                        </span>
-                      ) : (
-                        ""
-                      )}
-                      {NewData.price1 ? (
-                        <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {NewData.price1} {t("useful78")}
-                        </span>
+                        <>
+                          <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
+                            {NewData.price1_description}
+                          </span>
+
+                          <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                            {NewData.price1} {t("useful78")}
+                          </span>
+                        </>
                       ) : (
                         ""
                       )}
