@@ -8,10 +8,10 @@ import { useTranslation } from "react-i18next";
 
 function Shaharlar({ query, setQuery }) {
   const [isReady, setIsReady] = useState(null);
-  const [places, setPlaces] = useState([]);
+  const [setPlaces] = useState([]);
   const { t } = useTranslation();
 
-  const [data, setData] = useState([]);
+  const [data] = useState([]);
   const [filtedData, setFiltedData] = useState([]);
 
   useEffect(() => {
