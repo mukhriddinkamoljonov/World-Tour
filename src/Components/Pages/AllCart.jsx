@@ -7,8 +7,10 @@ import { useParams } from "react-router-dom";
 import Tavsiya from "./Tavsiya";
 import Form from "../Form/Form";
 import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 
 const AllCart = () => {
+  const challage = i18n.language;
   let { id } = useParams();
   const [item, setItem] = useState([]);
   const [itemData, setItemData] = useState([]);
@@ -26,6 +28,68 @@ const AllCart = () => {
       });
   }, [id]);
 
+  const NewData = {};
+
+  if (challage === "uz") {
+    NewData.hashtags = item.hashtags_uz;
+    NewData.address = item.address_uz;
+    NewData.price1 = item.price1_uz;
+    NewData.direction = item.direction_uz;
+    NewData.duration = item.duration_uz;
+    NewData.price1_description = item.price1_description_uz;
+    NewData.price2_description = item.price2_description_uz;
+    NewData.price3_description = item.price3_description_uz;
+    NewData.price2 = item.price2_uz;
+    NewData.price3 = item.price3_uz;
+    NewData.benefits = item.benefits_uz;
+    NewData.description = item.description_uz;
+    NewData.about_prices = item.about_prices_uz;
+  } else if (challage === "ru") {
+    NewData.hashtags = item.hashtags_ru;
+    NewData.address = item.address_ru;
+    NewData.price1 = item.price1_ru;
+    NewData.direction = item.direction_ru;
+    NewData.duration = item.duration_ru;
+    NewData.price1_description = item.price1_description_ru;
+    NewData.price3_description = item.price3_description_ru;
+    NewData.price2_description = item.price2_description_ru;
+    NewData.price2 = item.price2_ru;
+    NewData.price3 = item.price3_ru;
+    NewData.benefits = item.benefits_ru;
+    NewData.description = item.description_ru;
+    NewData.about_prices = item.about_prices_ru;
+  } else if (challage === "en") {
+    NewData.hashtags = item.hashtags_en;
+    NewData.address = item.address_en;
+    NewData.price1 = item.price1_en;
+    NewData.direction = item.direction_en;
+    NewData.duration = item.duration_en;
+    NewData.price1_description = item.price1_description_en;
+    NewData.price2_description = item.price2_description_en;
+    NewData.price2 = item.price2_en;
+    NewData.price3_description = item.price3_description_en;
+    NewData.price3 = item.price3_en;
+    NewData.benefits = item.benefits_en;
+    NewData.description = item.description_en;
+    NewData.about_prices = item.about_prices_en;
+  } else if (challage === "ar") {
+    NewData.hashtags = item.hashtags_ar;
+    NewData.address = item.address_ar;
+    NewData.price1 = item.price1_ar;
+    NewData.direction = item.direction_ar;
+    NewData.duration = item.duration_ar;
+    NewData.price1_description = item.price1_description_ar;
+    NewData.price2_description = item.price2_description_ar;
+    NewData.price3_description = item.price3_description_ar;
+    NewData.price2 = item.price2_ar;
+    NewData.price3 = item.price3_ar;
+    NewData.benefits = item.benefits_ar;
+    NewData.description = item.description_ar;
+    NewData.about_prices = item.about_prices_ar;
+  }
+
+  console.log(item);
+
   return (
     <div style={{ backgroundColor: "#fff" }}>
       . <br />
@@ -36,7 +100,7 @@ const AllCart = () => {
             <div className="page-head-content">
               <h2
                 dangerouslySetInnerHTML={{
-                  __html: item.hashtags,
+                  __html: NewData.hashtags,
                 }}
               ></h2>
             </div>
@@ -67,9 +131,11 @@ const AllCart = () => {
               </div>
               <div className="single-property-wrapper">
                 <div className="single-property-header">
-                  <h1 className="property-title pull-left">{item.address}</h1>
+                  <h1 className="property-title pull-left">
+                    {NewData.address}
+                  </h1>
                   <span className="property-price pull-right">
-                    {item.price1} so'm
+                    {NewData.price1} so'm
                   </span>
                 </div>
                 <div className="section additional-details">
@@ -83,7 +149,7 @@ const AllCart = () => {
                       <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
                         <div
                           dangerouslySetInnerHTML={{
-                            __html: item.direction,
+                            __html: NewData.direction,
                           }}
                         ></div>
                       </span>
@@ -93,54 +159,52 @@ const AllCart = () => {
                         {t("useful76")}
                       </span>
                       <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                        {item.duration}
+                        {NewData.duration}
                       </span>
                     </li>
                     <h4 className="s-property-title">{t("useful77")}</h4>
                     <li>
-                      {item.price1_description ? (
+                      {NewData.price1_description ? (
                         <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
-                          {item.price1_description}
+                          {NewData.price1_description}
                         </span>
                       ) : (
                         ""
                       )}
-                      {item.price1 ? (
+                      {NewData.price1 ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price1} {t("useful78")}
+                          {NewData.price1} {t("useful78")}
                         </span>
                       ) : (
                         ""
                       )}
                     </li>
                     <li>
-                      {item.price2_description ? (
-                        <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
-                          {item.price2_description}
-                        </span>
-                      ) : (
-                        ""
-                      )}
-                      {item.price2 ? (
-                        <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price2} {t("useful78")}
-                        </span>
+                      {NewData.price2_description ? (
+                        <>
+                          <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
+                            {NewData.price2_description}
+                          </span>
+
+                          <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                            {NewData.price2} {t("useful78")}
+                          </span>
+                        </>
                       ) : (
                         ""
                       )}
                     </li>
                     <li>
-                      {item.price3_description ? (
-                        <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
-                          {item.price3_description}
-                        </span>
-                      ) : (
-                        ""
-                      )}
-                      {item.price3 ? (
-                        <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price3} {t("useful78")}
-                        </span>
+                      {NewData.price3_description ? (
+                        <>
+                          <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
+                            {NewData.price3_description}
+                          </span>
+
+                          <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                            {NewData.price3} {t("useful78")}
+                          </span>
+                        </>
                       ) : (
                         ""
                       )}
@@ -149,9 +213,9 @@ const AllCart = () => {
                       <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
                         {t("useful79")}
                       </span>
-                      {item.benefits ? (
+                      {NewData.benefits ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.benefits}
+                          {NewData.benefits}
                         </span>
                       ) : (
                         ""
@@ -164,7 +228,7 @@ const AllCart = () => {
                   <div className="s-property-content">
                     <div
                       dangerouslySetInnerHTML={{
-                        __html: item.description,
+                        __html: NewData.description,
                       }}
                     ></div>
                   </div>
@@ -176,7 +240,7 @@ const AllCart = () => {
                     <div>
                       <div
                         dangerouslySetInnerHTML={{
-                          __html: item.about_prices,
+                          __html: NewData.about_prices,
                         }}
                         style={{ fontWeight: 700 }}
                       ></div>

@@ -69,8 +69,9 @@ const Main = ({ query }) => {
         console.log(error);
       });
   }, []);
+  console.log(i18n);
 
-  console.log(count);
+  const challage = i18n.language;
   return (
     <div>
       {/* SLIDER AREA START */}
@@ -111,7 +112,7 @@ const Main = ({ query }) => {
                 {items
                   .filter((item) => item.name.toLowerCase().includes(query))
                   .map((item) => (
-                    <SmallCard item={item} id={item.id} />
+                    <SmallCard item={item} id={item.id} challage={challage} />
                   ))}
 
                 <div className="col-sm-6 col-md-3 p0 card-image1">
@@ -125,7 +126,7 @@ const Main = ({ query }) => {
                       </h5>
                       <h5 className="tree-sub-ttl">{t("covid")}</h5>
                       <a
-                        target="_blank"
+                        target="__blank"
                         href="https://www.worldometers.info/coronavirus/"
                       >
                         <button
@@ -175,7 +176,7 @@ const Main = ({ query }) => {
                       <div className="welcome-estate">
                         <div className="welcome-icon">
                           <a
-                            target="_blank"
+                            target="__blank"
                             href="https://www.uzairways.com/uz"
                           >
                             <img src={plane} alt="plane img" />
@@ -187,7 +188,7 @@ const Main = ({ query }) => {
                     <div className="col-xs-6 m-padding">
                       <div className="welcome-estate">
                         <div className="welcome-icon">
-                          <a target="_blank" href="https://taxi.yandex.ru/">
+                          <a target="__blank" href="https://taxi.yandex.ru/">
                             <img src={car} alt="car img" />
                           </a>
                         </div>
@@ -202,10 +203,7 @@ const Main = ({ query }) => {
                     <div className="col-xs-6 m-padding">
                       <div className="welcome-estate">
                         <div className="welcome-icon">
-                          <a
-                            target="_blank"
-                            href="https://www.booking.com/"
-                          >
+                          <a target="_blank" href="https://www.booking.com/">
                             <img src={hotel} alt="" />
                           </a>
                         </div>
