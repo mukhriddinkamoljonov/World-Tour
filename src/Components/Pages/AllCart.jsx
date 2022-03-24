@@ -118,10 +118,9 @@ const AllCart = () => {
               <div className="row" style={{ marginLeft: "3px" }}>
                 <div className="light-slide-item">
                   <div className="slider-courusel">
-                    <Carousel autoPlay={"	boolean"}>
+                    <Carousel autoPlay={"boolean"}>
                       {itemData.map((img) => (
                         <div className="box1">
-    
                           <img src={img?.file} alt="title" />
                           {/* <p className="legend">Chorvoq</p> */}
                         </div>
