@@ -121,6 +121,7 @@ const AllCart = () => {
                     <Carousel autoPlay={"	boolean"}>
                       {itemData.map((img) => (
                         <div className="box1">
+    
                           <img src={img?.file} alt="title" />
                           {/* <p className="legend">Chorvoq</p> */}
                         </div>
