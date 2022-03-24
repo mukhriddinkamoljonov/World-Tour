@@ -9,14 +9,12 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const { t } = useTranslation();
   const [items, setItems] = useState([]);
-  const [isReady, setIsReady] = useState(null);
 
   useEffect(() => {
     axios
       .get("https://wgtour.pythonanywhere.com/api/places/shuffle?count=3")
       .then((res) => {
         setItems(res.data);
-        setIsReady(true);
       })
       .catch((error) => {
         console.log(error);
