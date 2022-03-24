@@ -203,7 +203,7 @@ const Main = ({ query }) => {
                     <div className="col-xs-6 m-padding">
                       <div className="welcome-estate">
                         <div className="welcome-icon">
-                          <a target="_blank" href="https://www.booking.com/">
+                          <a target="__blank" href="https://www.booking.com/">
                             <img src={hotel} alt="" />
                           </a>
                         </div>
@@ -322,7 +322,7 @@ const Main = ({ query }) => {
                 </div>
                 <div className="asks-first-arrow">
                   <a
-                    target="_blank"
+                    target="__blank"
                     href="https://www.uzairways.com/uz/xorijdagi-vakolatxonalar"
                   >
                     <span>
@@ -349,7 +349,7 @@ const Main = ({ query }) => {
                   </p>
                 </div>
                 <div className="asks-first-arrow">
-                  <a target="_blank" href="https://e-visa.gov.uz/application">
+                  <a target="__blank" href="https://e-visa.gov.uz/application">
                     <span>
                       <i className="fa-solid fa-chevron-right"></i>
                     </span>
