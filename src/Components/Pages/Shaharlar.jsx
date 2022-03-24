@@ -94,7 +94,7 @@ function Shaharlar({ query, setQuery }) {
                         </a>
                         <a
                           className="layout-grid active"
-                          href="javascript:void(0);"
+                          href="javascript:void(0)"
                         >
                           <i className="fa fa-th"></i>
                         </a>
