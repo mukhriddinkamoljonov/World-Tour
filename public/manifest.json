@@ -1,0 +1,26 @@
+{
+  "name": "World Glamour",
+  "short_name": "World Glamour Tour",
+  "theme_color": "#f3c221",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icons/logo-192x192.png",
+      "sizes": "image/png",
+      "type": "192x192"
+    },
+    {
+      "src": "icons/logo-512x512.png",
+      "sizes": "image/png",
+      "type": "512x512"
+    }
+  ]
+}

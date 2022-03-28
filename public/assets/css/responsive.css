@@ -166,11 +166,12 @@
   }
 
   .slider-content {
-    top: 30%;
+    /* top: 30%; */
+    position: unset;
   }
   .slider-area {
-    height: 100vh;
-    margin-top: -200px;
+    /* height: 100vh; */
+    /* margin-top: -200px; */
   }
 
   .home-area-1 {
