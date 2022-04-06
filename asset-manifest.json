@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0fa0b11b.css",
-    "main.js": "/static/js/main.e3122260.js",
+    "main.css": "/static/css/main.21891c53.css",
+    "main.js": "/static/js/main.c56755f2.js",
     "static/media/biz_haqimizda1.jpg": "/static/media/biz_haqimizda1.b23666cec3cb32e6e47f.jpg",
     "static/media/logo.png": "/static/media/logo.a3e8fbf5b90fe75ab528.png",
     "static/media/viza.jpg": "/static/media/viza.6640a6837b87344ccedf.jpg",
@@ -29,11 +29,11 @@
     "static/media/visa.jpg": "/static/media/visa.7a231055fbce40c139c3.jpg",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.0fa0b11b.css.map": "/static/css/main.0fa0b11b.css.map",
-    "main.e3122260.js.map": "/static/js/main.e3122260.js.map"
+    "main.21891c53.css.map": "/static/css/main.21891c53.css.map",
+    "main.c56755f2.js.map": "/static/js/main.c56755f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fa0b11b.css",
-    "static/js/main.e3122260.js"
+    "static/css/main.21891c53.css",
+    "static/js/main.c56755f2.js"
   ]
 }
