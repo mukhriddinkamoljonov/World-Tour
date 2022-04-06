@@ -53,7 +53,7 @@ const Form = ({ item }) => {
 
   const payButton = (e) => {
     e.preventDefault();
-    alert(`Hurmatli ${fullname} Sizning soro'vingiz amalga oshirilmoqda...`);
+    // alert(`Hurmatli ${fullname} Sizning soro'vingiz amalga oshirilmoqda...`);
     const data = {
       amount: activePrice,
       number_of_people: count,
@@ -149,7 +149,7 @@ const Form = ({ item }) => {
             <div>
               <div className="input-group">
                 <select
-                  style={{ width: "auto" }}
+                  style={{ width: "27.2rem" }}
                   ref={selectPrice}
                   onChange={select}
                 >

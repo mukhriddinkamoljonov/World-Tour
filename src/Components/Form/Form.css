@@ -38,7 +38,9 @@
   margin-top: 15px;
   opacity: 1;
   outline: 0;
-  padding: 0.4em 1.8em;
+  /* padding: 0.4em 1.8em; */
+  width: 43%;
+  height: 38px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -52,7 +54,7 @@
   touch-action: manipulation;
   vertical-align: baseline;
   white-space: nowrap;
-  margin-left: 71px;
+  margin-left: 106px;
   border-radius: 2.5px;
 }
 
@@ -111,8 +113,7 @@
   padding: 0 30px;
 }
 .payme {
-  width: 100px;
-  margin-right: 20px;
+  width: 85px;
 }
 
 .hidden {
@@ -135,7 +136,8 @@
   text-transform: uppercase;
   background-color: #1a39ac;
   color: #fff;
-  padding: 0.2em 1.8em;
   border-radius: 5px;
-  margin-left: 155px;
+  margin-left: 117px;
+  width: 85%;
+  height: 38px;
 }

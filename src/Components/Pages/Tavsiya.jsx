@@ -29,8 +29,8 @@ const Tavsiya = ({ title, count }) => {
       </div>
       {isReady ? (
         <div className="panel-body recent-property-widget">
-          {items.map((item) => (
-            <ul>
+          {items.map((item, i) => (
+            <ul key={i}>
               <li>
                 <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
                   <Link to={`/places/${item.id}`}>

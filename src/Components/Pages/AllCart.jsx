@@ -33,14 +33,12 @@ const AllCart = () => {
   if (challage === "uz") {
     NewData.hashtags = item.hashtags_uz;
     NewData.address = item.address_uz;
-    NewData.price1 = item.price1_uz;
+    // NewData.price1 = item.price1_uz;
     NewData.direction = item.direction_uz;
     NewData.duration = item.duration_uz;
     NewData.price1_description = item.price1_description_uz;
     NewData.price2_description = item.price2_description_uz;
     NewData.price3_description = item.price3_description_uz;
-    NewData.price2 = item.price2_uz;
-    NewData.price3 = item.price3_uz;
     NewData.benefits = item.benefits_uz;
     NewData.description = item.description_uz;
     NewData.about_prices = item.about_prices_uz;
@@ -89,7 +87,6 @@ const AllCart = () => {
   }
 
   console.log(item);
-
   return (
     <div style={{ backgroundColor: "#fff" }}>
       . <br />
@@ -135,7 +132,7 @@ const AllCart = () => {
                     {NewData.address}
                   </h1>
                   <span className="property-price pull-right">
-                    {NewData.price1} so'm
+                    {item.price1} so'm
                   </span>
                 </div>
                 <div className="section additional-details">
@@ -171,7 +168,7 @@ const AllCart = () => {
                           </span>
 
                           <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                            {NewData.price1} {t("useful78")}
+                            {item.price1} {t("useful78")}
                           </span>
                         </>
                       ) : (
@@ -186,7 +183,7 @@ const AllCart = () => {
                           </span>
 
                           <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                            {NewData.price2} {t("useful78")}
+                            {item.price2} {t("useful78")}
                           </span>
                         </>
                       ) : (
@@ -201,7 +198,7 @@ const AllCart = () => {
                           </span>
 
                           <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                            {NewData.price3} {t("useful78")}
+                            {item.price3} {t("useful78")}
                           </span>
                         </>
                       ) : (

@@ -289,6 +289,10 @@
   .panel.sidebar-menu {
     display: block;
   }
+  .button_payme {
+    margin-left: 71px;
+    width: 45%;
+  }
 }
 
 #header.header-scrolled {
@@ -335,8 +339,15 @@
   }
   .payme {
     margin-top: 10px;
-    width: 90px !important;
-    margin-right: 20px;
+    width: 80px !important;
+    margin-left: 3px;
+  }
+  .btn-visa {
+    margin-left: 75px !important;
+  }
+  .button_payme {
+    margin-left: 71px;
+    width: 45%;
   }
 }
 

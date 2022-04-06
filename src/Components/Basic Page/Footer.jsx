@@ -115,8 +115,8 @@ const Footer = () => {
               <div className="single-footer">
                 <h4>{t("region")}</h4>
                 <div className="footer-title-line"></div>
-                {items.map((item) => (
-                  <ul className="footer-blog">
+                {items.map((item, i) => (
+                  <ul className="footer-blog" key={i}>
                     <li>
                       <div className="col-md-3 col-sm-4 col-xs-4 blg-thumb p0">
                         <Link to={`/places/${item.id}`}>
