@@ -71,6 +71,7 @@ const Form = ({ item }) => {
         .post(paymentCheckoutUrl, data)
         .then((response) => window.location.assign(response.data.url));
     }
+    console.log(data);
 
     axios.post(createOrderUrl, data).then(
       (response) => {
@@ -122,7 +123,8 @@ const Form = ({ item }) => {
               onChange={(e) => setPassport(e.target.value)}
             />
             <div className="input-icon">
-              <i className="fa-solid fa-passport"></i>{" "}
+              <i className="fa-solid fa-passport"></i>
+              {""}
             </div>
           </div>
           <div className="input-group input-group-icon">
