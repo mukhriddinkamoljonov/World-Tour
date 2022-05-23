@@ -69,7 +69,7 @@ const Main = ({ query }) => {
         console.log(error);
       });
   }, []);
-
+  alert()
   const challage = i18n.language;
   return (
     <div>
@@ -111,7 +111,12 @@ const Main = ({ query }) => {
                 {items
                   .filter((item) => item.name.toLowerCase().includes(query))
                   .map((item, i) => (
-                    <SmallCard item={item} id={item.id} challage={challage} key={i} />
+                    <SmallCard
+                      item={item}
+                      id={item.id}
+                      challage={challage}
+                      key={i}
+                    />
                   ))}
 
                 <div className="col-sm-6 col-md-3 p0 card-image1">

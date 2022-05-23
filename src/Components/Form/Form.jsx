@@ -71,7 +71,6 @@ const Form = ({ item }) => {
         .post(paymentCheckoutUrl, data)
         .then((response) => window.location.assign(response.data.url));
     }
-    console.log(data);
 
     axios.post(createOrderUrl, data).then(
       (response) => {

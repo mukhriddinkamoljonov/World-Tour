@@ -322,7 +322,7 @@
   .main-menu {
     padding-bottom: 0px;
     padding-top: 0px;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(2 55, 255, 255, 0.15);
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -375,6 +375,7 @@
 
 .page-head-content h2 {
   font-weight: 500;
+  padding: 0px 22px;
 }
 
 .tel-number {

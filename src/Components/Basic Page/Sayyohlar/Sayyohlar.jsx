@@ -111,7 +111,7 @@ const Sayyohlar = () => {
           <div className="row">
             <div className="page-head-content">
               <h1 className="page-title">{t("turist_title")}</h1>
-              <h4>
+              <h4 style={{ padding: "0px 17px" }}>
                 {t("turist_title1")} <br /> {t("turist_title3")}
               </h4>
             </div>

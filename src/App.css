@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+/* body,
+html {
+  height: 100vh;
+} */
+
 body {
   width: 100%;
   padding: 0;
@@ -13,7 +18,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #e5e5e5;
   font-family: "Roboto", sans-serif;
 }
 
